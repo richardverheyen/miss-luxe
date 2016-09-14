@@ -1,0 +1,36 @@
+header {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1080px;
+    min-width: 320px;
+    padding: 0 20px;
+    img {
+      width: 300px;
+      height: auto;
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      li {
+        padding: 10px;
+        list-style: none;
+        text-transform: uppercase;
+        a,
+        a:link,
+        a:visited {
+          text-decoration: none;
+          color: black;
+        }
+        img {
+          width: auto;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

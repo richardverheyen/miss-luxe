@@ -115,14 +115,67 @@ section > div {
 }
 
 button {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
   text-transform: uppercase;
+  letter-spacing: 1px;
   border: 1px #E3A4A1 solid;
   padding: 20px 90px;
-  margin: 40px auto;
+  margin: 30px auto;
   background: white;
   color: #E3A4A1;
   font-size: 20px;
   font-style: italic;
+  width: 340px;
+}
+
+.button2 {
+  display: block;
+  background: #E3A4A1;
+  color: black;
+}
+
+.banner {
+  background: url("/assets/img/landing/home-banner-ready-to-feel-beautiful.jpg");
+  background-position-y: 30%;
+  background-size: 100%;
+  height: 50vh;
+}
+.banner > div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto 0 auto 42%;
+}
+.banner > div div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banner > div div h2 {
+  line-height: 125%;
+  text-align: center;
+  color: white;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 30px 2px;
+  margin: 15px;
+}
+.banner > div div h2 span {
+  display: block;
 }
 
 header div {
@@ -170,6 +223,23 @@ header div nav li a:visited {
 header div nav li img {
   width: auto;
   height: 25px;
+}
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer div p {
+  font-style: italic;
+  font-size: 14px;
+  margin: 30px 0;
 }
 
 /* Specific to one page */
@@ -318,6 +388,7 @@ header div nav li img {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin: 60px 0;
 }
 #services div > div {
   -webkit-flex-direction: row;
@@ -356,6 +427,107 @@ header div nav li img {
   padding: 0;
   margin-top: 10px;
   border-top: 1px black solid;
+}
+
+#stockists {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#stockists > div {
+  border-top: 1px black solid;
+}
+#stockists > div h4 {
+  text-align: center;
+  margin: 80px 0;
+}
+#stockists > div div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#stockists > div div img {
+  padding: 26px 20px;
+  width: 25%;
+  height: auto;
+}
+
+#contact {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#contact > div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+#contact > div > div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 100px 20px 50px;
+}
+#contact > div > div h2 {
+  border-bottom: black solid 1px;
+  padding: 0 5px 50px;
+}
+#contact > div > div p {
+  font-size: 22px;
+  margin: 5px auto;
+}
+#contact > div > div button {
+  margin: 14px auto;
+}
+#contact > div > div div {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#contact > div > div div img {
+  height: 25px;
+  width: auto;
+  margin: 20px;
+}
+
+.map {
+  position: relative;
+}
+.map a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /* Outdate Browsers*/

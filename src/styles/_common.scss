@@ -1,1 +1,23 @@
-// /lkjas
+body {
+  margin: 0;
+}
+header,
+section {
+  display: flex;
+  justify-content: center;
+  > div {
+    max-width: 1080px;
+    min-width: 320px;
+    padding: 0 20px;
+  }
+}
+button {
+  text-transform: uppercase;
+  border: 1px $fairlie-pink solid;
+  padding: 20px 90px;
+  margin: 40px auto;
+  background: white;
+  color: $fairlie-pink;
+  font-size: 20px;
+  font-style: italic;
+}

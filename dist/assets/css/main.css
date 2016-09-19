@@ -121,7 +121,7 @@ button {
   letter-spacing: 1px;
   border: 1px #E3A4A1 solid;
   padding: 20px 90px;
-  margin: 30px auto;
+  margin: 10px auto;
   background: white;
   color: #E3A4A1;
   font-size: 20px;
@@ -192,6 +192,49 @@ button:hover {
   margin: 15px;
 }
 .banner > div div h2 span {
+  display: block;
+}
+
+.banner2 {
+  background: url("/assets/img/our-team/team-banner-ready-to-feel-beautiful.jpg");
+  background-position-y: 30%;
+  background-size: 100%;
+  height: 50vh;
+}
+.banner2 > div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto 0 auto 42%;
+}
+.banner2 > div div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banner2 > div div h2 {
+  line-height: 125%;
+  text-align: center;
+  color: white;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 30px 2px;
+  margin: 15px;
+}
+.banner2 > div div h2 span {
   display: block;
 }
 
@@ -562,7 +605,8 @@ footer div p {
 #hero2 {
   background: url("/assets/img/our-team/team-banner.jpg");
   background-position: 55%;
-  height: 75vh;
+  height: 60vh;
+  background-size: cover;
 }
 #hero2 div {
   display: -webkit-flex;
@@ -585,6 +629,62 @@ footer div p {
 }
 #hero2 div h1 span {
   display: block;
+}
+
+#profiles {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#profiles div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#profiles div > div {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 60px 0;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#profiles div > div > div {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 30%;
+  padding: 0 30px;
+  margin: 0;
+}
+#profiles div > div > div h2 {
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 24px 34px;
+  margin: 0 auto;
+}
+#profiles div > div > div h2 span {
+  display: block;
+  font-size: 38px;
+}
+#profiles div > div > div h5 {
+  text-transform: none;
+  margin: 30px auto;
+  font-size: 15px;
+}
+#profiles div img {
+  width: 40%;
+  height: 40%;
+  margin: 0 30px;
 }
 
 /* Outdate Browsers*/

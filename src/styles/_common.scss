@@ -24,11 +24,31 @@ button {
   font-size: 20px;
   font-style: italic;
   width: 340px;
+  &:hover {
+    background: $fairlie-pink;
+    color: white;
+  }
 }
 .button2 {
   display: block;
   background: $fairlie-pink;
   color: black;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.social-media-button {
+  a:nth-last-child(1) {
+    display: none;
+  }
+  &:hover {
+    a:nth-last-child(1) {
+      display: block;
+    }
+    a:nth-last-child(2) {
+      display: none;
+    }
+  }
 }
 .banner {
   background: url('/assets/img/landing/home-banner-ready-to-feel-beautiful.jpg');

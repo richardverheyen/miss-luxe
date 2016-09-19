@@ -50,7 +50,7 @@
       }
       img {
         width: 50%;
-        height: auto;
+        height: 50%;
         margin: 60px 10px;
       }
     }
@@ -79,6 +79,14 @@
         img:nth-last-child(1) {
           display: none;
         }
+        &:hover {
+          img:nth-last-child(2) {
+            display: none;
+          }
+          img:nth-last-child(1) {
+            display: block;
+          }
+        }
       }
     }
   }
@@ -95,7 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 60px 0;
+    margin: 30px 0;
     > div {
       flex-direction: row;
       > div {
@@ -173,6 +181,7 @@
         margin: 14px auto;
       }
       div {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         img {

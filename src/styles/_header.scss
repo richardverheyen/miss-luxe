@@ -18,15 +18,20 @@ header {
         padding: 13px;
         list-style: none;
         text-transform: uppercase;
+        img {
+          width: auto;
+          height: 25px;
+        }
         a,
         a:link,
         a:visited {
           text-decoration: none;
           color: black;
         }
-        img {
-          width: auto;
-          height: 25px;
+        a {
+          &:hover {
+            color: $fairlie-grey;
+          }
         }
       }
     }

@@ -83,7 +83,7 @@ p {
   font-weight: lighter;
   font-size: 12px;
   font-style: italic;
-  color: grey;
+  color: #C9C9C9;
   margin: 20px auto;
 }
 p span {
@@ -128,11 +128,28 @@ button {
   font-style: italic;
   width: 340px;
 }
+button:hover {
+  background: #E3A4A1;
+  color: white;
+}
 
 .button2 {
   display: block;
   background: #E3A4A1;
   color: black;
+}
+.button2:hover {
+  opacity: 0.9;
+}
+
+.social-media-button a:nth-last-child(1) {
+  display: none;
+}
+.social-media-button:hover a:nth-last-child(1) {
+  display: block;
+}
+.social-media-button:hover a:nth-last-child(2) {
+  display: none;
 }
 
 .banner {
@@ -214,15 +231,18 @@ header div nav li {
   list-style: none;
   text-transform: uppercase;
 }
+header div nav li img {
+  width: auto;
+  height: 25px;
+}
 header div nav li a,
 header div nav li a:link,
 header div nav li a:visited {
   text-decoration: none;
   color: black;
 }
-header div nav li img {
-  width: auto;
-  height: 25px;
+header div nav li a:hover {
+  color: #C9C9C9;
 }
 
 footer {
@@ -320,7 +340,7 @@ footer div p {
 }
 #intro div div img {
   width: 50%;
-  height: auto;
+  height: 50%;
   margin: 60px 10px;
 }
 #intro div h3 {
@@ -361,6 +381,12 @@ footer div p {
 #gallery > div div div img:nth-last-child(1) {
   display: none;
 }
+#gallery > div div div:hover img:nth-last-child(2) {
+  display: none;
+}
+#gallery > div div div:hover img:nth-last-child(1) {
+  display: block;
+}
 
 #services {
   -webkit-flex-direction: column;
@@ -388,7 +414,7 @@ footer div p {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 60px 0;
+  margin: 30px 0;
 }
 #services div > div {
   -webkit-flex-direction: row;
@@ -501,6 +527,9 @@ footer div p {
   margin: 14px auto;
 }
 #contact > div > div div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
@@ -528,6 +557,34 @@ footer div p {
 .map iframe {
   width: 100%;
   height: 100%;
+}
+
+#hero2 {
+  background: url("/assets/img/our-team/team-banner.jpg");
+  background-position: 55%;
+  height: 75vh;
+}
+#hero2 div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+#hero2 div h1 {
+  color: white;
+  margin: auto 0 auto 55%;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 15px 2px;
+}
+#hero2 div h1 span {
+  display: block;
 }
 
 /* Outdate Browsers*/

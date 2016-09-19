@@ -23,10 +23,6 @@ module.exports = function(grunt) {
         files: ['src/templates/**/*.hbs', 'src/templates/**/*.json', 'src/templates/layout.html '],
         tasks: ['handlebarslayouts']
       },
-      // handlebars: {
-      //   files: ['src/templates/**/*.hbs', 'src/templates/**/*.json', 'src/templates/layout.html '],
-      //   tasks: ['handlebarslayouts', 'inlinecss']
-      // },
       sass: {
         files: ['src/styles/**/*.scss'],
         tasks: ['sass', 'postcss']
@@ -217,21 +213,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // inlinecss: {
-    //   main: {
-    //     options: {
-    //       removeStyleTags: false
-    //     },
-    //     files: [{
-    //       src: 'dist/emails/letter-of-authority.html',
-    //       dest: 'dist/emails/letter-of-authority-inline.html'
-    //     }, {
-    //       src: 'dist/emails/confirmation-email.html',
-    //       dest: 'dist/emails/confirmation-email-inline.html'
-    //     }]
-    //   }
-    // }
-
   });
 
   // Load tasks
@@ -248,13 +229,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-xml-sitemap');
   grunt.loadNpmTasks('grunt-text-replace');
-  // grunt.loadNpmTasks('grunt-inline-css');
 
   // Available commands
   grunt.registerTask('default', ['build', 'serve']);
   grunt.registerTask('build', ['clean:dist', 'copy', 'handlebarslayouts', 'sass', 'postcss', 'jshint', 'uglify', 'concat', 'clean:temp']);
-
-  // grunt.registerTask('build', ['clean:dist', 'copy', 'handlebarslayouts', 'inlinecss', 'sass', 'postcss', 'jshint', 'uglify', 'concat', 'clean:temp']);
   grunt.registerTask('sitemap', ['xml_sitemap', 'replace:sitemap_dist']);
   grunt.registerTask('serve', ['connect', 'watch']);
 

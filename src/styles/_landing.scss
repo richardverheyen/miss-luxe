@@ -57,36 +57,9 @@
     h3 {
       text-align: center;
       max-width: 750px;
-      margin: 0 auto;
+      margin: 0 auto 40px;
       span {
         display: block;
-      }
-    }
-  }
-}
-#gallery {
-  > div {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    div {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      div {
-        padding: 15px;
-        img:nth-last-child(1) {
-          display: none;
-        }
-        &:hover {
-          img:nth-last-child(2) {
-            display: none;
-          }
-          img:nth-last-child(1) {
-            display: block;
-          }
-        }
       }
     }
   }

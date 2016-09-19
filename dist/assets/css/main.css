@@ -152,6 +152,34 @@ button:hover {
   display: none;
 }
 
+#hero {
+  background: url("/assets/img/landing/home-banner.jpg");
+  background-position: 55%;
+  height: 75vh;
+}
+#hero div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+#hero div h1 {
+  color: white;
+  margin: auto 0 auto 55%;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 15px 2px;
+}
+#hero div h1 span {
+  display: block;
+}
+
 .banner {
   background: url("/assets/img/landing/home-banner-ready-to-feel-beautiful.jpg");
   background-position-y: 30%;
@@ -404,34 +432,6 @@ footer div p {
 }
 
 /* Specific to one page */
-#hero {
-  background: url("/assets/img/landing/home-banner.jpg");
-  background-position: 55%;
-  height: 75vh;
-}
-#hero div {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-#hero div h1 {
-  color: white;
-  margin: auto 0 auto 55%;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  padding: 15px 2px;
-}
-#hero div h1 span {
-  display: block;
-}
-
 #intro div {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -688,6 +688,7 @@ footer div p {
   border-top: 1px solid;
   border-bottom: 1px solid;
   padding: 15px 2px;
+  max-width: 245px;
 }
 #hero2 div h1 span {
   display: block;

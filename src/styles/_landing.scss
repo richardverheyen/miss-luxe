@@ -1,24 +1,3 @@
-#hero {
-  background: url('/assets/img/landing/home-banner.jpg');
-  background-position: 55%;
-  height: 75vh;
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    h1 {
-      color: white;
-      margin: auto 0 auto 55%;
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      padding: 15px 2px;
-      span {
-        display: block;
-      }
-    }
-  }
-}
 #intro {
   div {
     display: flex;

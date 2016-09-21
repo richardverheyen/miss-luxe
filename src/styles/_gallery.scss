@@ -1,1 +1,6 @@
-#gallery {}
+#gallery {
+  .banner {
+    background: url('/assets/img/gallery/gallery-banner-ready-to-feel-beautiful.jpg');
+    @include retina("/assets/img/gallery/gallery-banner-ready-to-feel-beautiful@2x.jpg",55%);
+  }
+}

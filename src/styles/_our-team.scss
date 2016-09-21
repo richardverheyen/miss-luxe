@@ -1,63 +1,64 @@
-#hero2 {
-  background: url('/assets/img/our-team/team-banner.jpg');
-  background-position: 55%;
-  height: 60vh;
-  background-size: cover;
-  div {
+#our-team {
+  #hero {
+    background: url('/assets/img/our-team/team-banner.jpg');
+    @include retina("/assets/img/our-team/team-banner@2x.jpg",55%);
+    height: 60vh;
+  }
+  #profiles {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    h1 {
-      color: white;
-      margin: auto 0 auto 55%;
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      padding: 15px 2px;
-      max-width: 245px;
-      span {
-        display: block;
+    div {
+      display: flex;
+      flex-direction: column;
+      > div {
+        flex-direction: row;
+        margin: 60px 0;
+        align-items: center;
+        justify-content: center;
+        > div {
+          flex-direction: column;
+          max-width: 30%;
+          padding: 0 30px;
+          margin: 0;
+          h2 {
+            position: relative;
+            text-align: center;
+            padding: 24px 0;
+            margin: 0 auto;
+            &:after,
+            &:before {
+              content: ' ';
+              position: absolute;
+              left: 50%;
+              top: 0;
+              width: 50%;
+              height: 1px;
+              background: red;
+              margin-left: -25%;
+            }
+            &:after {
+              top: 100%;
+            }
+            span {
+              display: block;
+              font-size: 38px;
+            }
+          }
+          h5 {
+            text-transform: none;
+            margin: 30px auto;
+            font-size: 15px;
+          }
+        }
+      }
+      img {
+        width: 40%;
+        height: 40%;
+        margin: 0 30px;
       }
     }
   }
-}
-#profiles {
-  display: flex;
-  div {
-    display: flex;
-    flex-direction: column;
-    > div {
-      flex-direction: row;
-      margin: 60px 0;
-      align-items: center;
-      justify-content: center;
-      > div {
-        flex-direction: column;
-        max-width: 30%;
-        padding: 0 30px;
-        margin: 0;
-        h2 {
-          text-align: center;
-          border-top: 1px solid;
-          border-bottom: 1px solid;
-          padding: 24px 34px;
-          margin: 0 auto;
-          span {
-            display: block;
-            font-size: 38px;
-          }
-        }
-        h5 {
-          text-transform: none;
-          margin: 30px auto;
-          font-size: 15px;
-        }
-      }
-    }
-    img {
-      width: 40%;
-      height: 40%;
-      margin: 0 30px;
-    }
+  .banner {
+    background: url('/assets/img/our-team/team-banner-ready-to-feel-beautiful.jpg');
+    @include retina("/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.jpg",55%);
   }
 }

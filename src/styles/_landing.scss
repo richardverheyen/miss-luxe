@@ -53,7 +53,18 @@
     align-items: center;
     width: 100%;
     h2 {
+      position: relative;
       margin: 20px auto;
+      &:after {
+        content: ' ';
+        position: absolute;
+        left: 50%;
+        top: 200%;
+        width: 60%;
+        height: 1px;
+        background: black;
+        margin: 1px 0 1px -30%;
+      }
     }
     div {
       display: flex;
@@ -97,18 +108,17 @@
       border-top: 1px black solid;
       h4 {
         text-align: center;
-        margin: 80px 0;
+        margin: 80px 0 40px;
       }
       div {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px;
         img {
           padding: 26px 20px;
           width: 25%;
           height: auto;
-          &:nth-last-child(3) {}
-          &:nth-last-child(1) {}
         }
       }
     }

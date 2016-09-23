@@ -3,6 +3,14 @@
     background: url('/assets/img/our-team/team-banner.jpg');
     @include retina("/assets/img/our-team/team-banner@2x.jpg",55%);
     height: 60vh;
+    h1 {
+      &:after,
+      &:before {
+        width: 104%;
+        height: 1px;
+        margin-left: -52%;
+      }
+    }
   }
   #profiles {
     display: flex;
@@ -30,10 +38,10 @@
               position: absolute;
               left: 50%;
               top: 0;
-              width: 50%;
+              width: 160%;
               height: 1px;
-              background: red;
-              margin-left: -25%;
+              background: black;
+              margin: 1px 0 1px -80%;
             }
             &:after {
               top: 100%;

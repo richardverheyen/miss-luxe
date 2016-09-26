@@ -12,38 +12,63 @@
       div {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: stretch;
         width: 100%;
-        div {
+        div,
+        img {
           background: $fairlie-pink;
-          width: 50%;
-          height: auto;
+          width: 45vw;
+          height: 27vw;
           align-items: center;
-          margin: 60px 10px;
+          margin: 3vw 1vw;
           h2 {
             text-align: center;
+            font-size: 7vw;
             border-top: 1px solid;
             border-bottom: 1px solid;
-            padding: 24px 34px;
+            padding: 6% 5%;
             span {
               display: block;
-              font-size: 38px;
+              font-size: 6vw;
+            }
+            @media (min-width: 1100px) {
+              font-size: 76px;
+              span {
+                font-size: 70px;
+              }
             }
           }
         }
-        img {
-          width: 50%;
-          height: 50%;
-          margin: 60px 10px;
+        // @media (max-width: 800px) {
+        //   h2 {
+        //     font-size:
+        //   }
+        // }
+        @media (max-width: 500px) {
+          flex-direction: column;
+          align-items: center;
+          margin: 10px 0;
+          div {
+            display: none;
+          }
+          > img {
+            margin: 20px 10px;
+            width: 66vw;
+            height: 39vw;
+          }
         }
       }
       h3 {
         text-align: center;
         max-width: 750px;
-        margin: 0 auto 40px;
+        margin: 0 20px 40px;
         span {
           display: block;
+        }
+        @media(max-width: 800px) {
+          max-width: 525px;
+          font-size: 16px;
         }
       }
     }
@@ -55,15 +80,19 @@
     h2 {
       position: relative;
       margin: 20px auto;
+      font-size: 8vw;
+      @media (min-width:700px) {
+        font-size: 58px;
+      }
       &:after {
         content: ' ';
         position: absolute;
         left: 50%;
-        top: 200%;
-        width: 60%;
+        top: 80px;
+        width: 50vw;
         height: 1px;
         background: black;
-        margin: 1px 0 1px -30%;
+        margin: 1px 0 1px -25vw;
       }
     }
     div {
@@ -90,6 +119,10 @@
           }
           > p {
             margin: 5px 0 18px;
+            @media (max-width: 900px) {
+              margin-left: auto;
+              text-align: right;
+            }
           }
           div {
             width: 100%;
@@ -99,16 +132,39 @@
           }
         }
       }
+      @media (max-width: 900px) {
+        div {
+          flex-direction: column;
+          align-items: center;
+          div {
+            width: 80%;
+            max-width: 500px;
+            margin: 0;
+          }
+        }
+      }
     }
   }
   #stockists {
     display: flex;
     justify-content: center;
     > div {
-      border-top: 1px black solid;
+      position: relative;
+      &:before {
+        content: ' ';
+        position: absolute;
+        left: 50%;
+        width: 80vw;
+        height: 1px;
+        background: black;
+        margin: 1px 0 1px -40vw;
+      }
       h4 {
         text-align: center;
         margin: 80px 0 40px;
+        @media (max-width: 900px) {
+          margin: 40px 0 20px;
+        }
       }
       div {
         display: flex;
@@ -119,6 +175,9 @@
           padding: 26px 20px;
           width: 25%;
           height: auto;
+          @media (max-width: 500px) {
+            padding: 10px 5px;
+          }
         }
       }
     }
@@ -143,10 +202,18 @@
         h2 {
           border-bottom: black solid 1px;
           padding: 0 5px 50px;
+          @media (max-width: 900px) {
+            font-size: 7vw;
+            padding-bottom: 35px;
+            margin: 10px 0;
+          }
         }
         p {
           font-size: 22px;
           margin: 5px auto;
+          @media (max-width: 900px) {
+            font-size: 14px;
+          }
         }
         button {
           margin: 14px auto;
@@ -160,6 +227,15 @@
             width: auto;
             margin: 20px;
           }
+        }
+      }
+      @media (max-width: 700px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 30px 0;
+        > div {
+          width: 80%;
+          margin: 0;
         }
       }
     }

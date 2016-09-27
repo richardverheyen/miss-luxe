@@ -97,6 +97,7 @@ body {
   margin: 0;
 }
 
+footer,
 header,
 section {
   display: -webkit-flex;
@@ -106,6 +107,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
 }
+footer > div,
 header > div,
 section > div {
   max-width: 1080px;
@@ -147,8 +149,10 @@ section > div {
 }
 @media (max-width: 500px) {
   .button {
-    padding: 5px 18px;
-    font-size: 10px;
+    width: 71vw;
+    max-width: 280px;
+    padding: 10px 0;
+    font-size: 14px;
   }
 }
 
@@ -186,9 +190,10 @@ section > div {
 }
 @media (max-width: 500px) {
   .button2 {
-    padding: 5px 18px;
-    font-size: 10px;
-    width: 120px;
+    width: 71vw;
+    max-width: 280px;
+    padding: 10px 0;
+    font-size: 14px;
   }
 }
 
@@ -210,7 +215,7 @@ section > div {
 @media (max-width: 900px) {
   #hero {
     height: 58vw;
-    min-height: 60vh;
+    min-height: 250px;
   }
 }
 #hero div {
@@ -254,8 +259,8 @@ section > div {
 }
 
 .banner {
-  background-position-y: 30%;
   background-size: 100%;
+  min-height: 50vw;
 }
 .banner > div {
   display: -webkit-flex;
@@ -286,7 +291,7 @@ section > div {
   line-height: 125%;
   text-align: center;
   color: white;
-  padding: 30px 2px;
+  padding: 25px 2px;
   margin: 15px;
 }
 .banner > div div h2:after, .banner > div div h2:before {
@@ -308,18 +313,12 @@ section > div {
 @media (max-width: 900px) {
   .banner > div div h2 {
     padding: 20px 2px;
-    font-size: 38px;
-  }
-}
-@media (max-width: 650px) {
-  .banner > div div h2 {
-    padding: 20px 2px;
-    font-size: 7vw;
+    font-size: 5vw;
   }
 }
 @media (max-width: 400px) {
   .banner > div {
-    margin: auto 0 auto 32%;
+    margin: 10vw auto;
   }
 }
 
@@ -331,6 +330,11 @@ section > div {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  #gallery > div {
+    margin-bottom: 20px;
+  }
 }
 #gallery > div div {
   display: -webkit-flex;
@@ -346,6 +350,11 @@ section > div {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 40px 0;
+}
+@media (max-width: 500px) {
+  #gallery > div div {
+    margin: 10px 0;
+  }
 }
 #gallery > div div h2 {
   position: relative;
@@ -565,6 +574,12 @@ header div nav ul li {
   list-style: none;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  header div nav ul li {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
 header div nav ul li img {
   width: auto;
   height: 25px;
@@ -602,6 +617,7 @@ header div nav ul li a:hover {
     padding: 0;
     background: white;
     z-index: 3;
+    width: 100vw;
   }
   header div nav ul li {
     display: -webkit-flex;
@@ -631,16 +647,25 @@ header div nav ul li a:hover {
   }
 }
 
-.dropdown {
-  width: 100vw;
-}
 .dropdown ul {
+  transition: all 4s ease;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
 footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer div {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -725,14 +750,14 @@ footer div p {
   display: block;
   font-size: 6vw;
 }
-@media (min-width: 1100px) {
+@media (min-width: 900px) {
   #landing #intro div div div h2,
   #landing #intro div div img h2 {
-    font-size: 76px;
+    font-size: 65px;
   }
   #landing #intro div div div h2 span,
   #landing #intro div div img h2 span {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 @media (max-width: 500px) {
@@ -809,9 +834,9 @@ footer div p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 30px 0;
 }
 #landing #services div > div {

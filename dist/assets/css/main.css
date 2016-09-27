@@ -260,7 +260,8 @@ section > div {
 
 .banner {
   background-size: 100%;
-  min-height: 50vw;
+  height: 50vw;
+  max-height: 500px;
 }
 .banner > div {
   display: -webkit-flex;
@@ -685,6 +686,12 @@ footer div p {
   footer div p {
     font-size: 10px;
   }
+}
+footer div p a,
+footer div p a:link,
+footer div p a:visited {
+  text-decoration: underline;
+  color: currentColor;
 }
 
 /* Specific to one page */

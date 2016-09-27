@@ -136,7 +136,8 @@ section {
 }
 .banner {
   background-size: 100%;
-  min-height: 50vw;
+  height: 50vw;
+  max-height: 500px;
   > div {
     display: flex;
     flex-direction: column;

@@ -13,6 +13,12 @@ footer {
       @media (max-width: 500px) {
         font-size: 10px;
       }
+      a,
+      a:link,
+      a:visited {
+        text-decoration: underline;
+        color: currentColor;
+      }
     }
   }
 }

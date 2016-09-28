@@ -20,6 +20,8 @@
           background: $fairlie-pink;
           width: 45vw;
           height: 27vw;
+          max-width: 465px;
+          max-height: 300px;
           align-items: center;
           margin: 3vw 1vw;
           h2 {
@@ -89,10 +91,11 @@
         position: absolute;
         left: 50%;
         top: 80px;
-        width: 50vw;
+        width: 152%;
+        max-width: 1260px;
         height: 1px;
         background: black;
-        margin: 1px 0 1px -25vw;
+        margin: 1px 0 1px -76%;
       }
     }
     div {
@@ -154,10 +157,11 @@
         content: ' ';
         position: absolute;
         left: 50%;
-        width: 80vw;
+        width: 80%;
+        max-width: 1260px;
         height: 1px;
         background: black;
-        margin: 1px 0 1px -40vw;
+        margin: 1px 0 1px -40%;
       }
       h4 {
         text-align: center;

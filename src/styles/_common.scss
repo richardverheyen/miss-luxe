@@ -97,6 +97,7 @@ section {
   background-position: 55%;
   background-size: cover;
   height: 75vh;
+  max-height: 800px;
   @media (max-width: 900px) {
     height: 58vw;
     min-height: 250px;
@@ -131,6 +132,9 @@ section {
       @media (max-width: 900px) {
         margin: auto 0 auto 40%;
       }
+      @media (min-width: 1000px) {
+        font-size: 80px;
+      }
     }
   }
 }
@@ -141,13 +145,13 @@ section {
   > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    margin: auto 0 auto 42%;
     div {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto 0 auto 42%;
       h2 {
         position: relative;
         line-height: 125%;

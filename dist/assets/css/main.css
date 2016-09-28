@@ -211,6 +211,7 @@ section > div {
   background-position: 55%;
   background-size: cover;
   height: 75vh;
+  max-height: 800px;
 }
 @media (max-width: 900px) {
   #hero {
@@ -257,6 +258,11 @@ section > div {
     margin: auto 0 auto 40%;
   }
 }
+@media (min-width: 1000px) {
+  #hero div h1 {
+    font-size: 80px;
+  }
+}
 
 .banner {
   background-size: 100%;
@@ -270,14 +276,7 @@ section > div {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-  margin: auto 0 auto 42%;
 }
 .banner > div div {
   display: -webkit-flex;
@@ -286,6 +285,13 @@ section > div {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 auto 42%;
 }
 .banner > div div h2 {
   position: relative;
@@ -738,6 +744,8 @@ footer div p a:visited {
   background: #E3A4A1;
   width: 45vw;
   height: 27vw;
+  max-width: 465px;
+  max-height: 300px;
   -webkit-align-items: center;
       -ms-flex-align: center;
               -ms-grid-row-align: center;
@@ -826,10 +834,11 @@ footer div p a:visited {
   position: absolute;
   left: 50%;
   top: 80px;
-  width: 50vw;
+  width: 152%;
+  max-width: 1260px;
   height: 1px;
   background: black;
-  margin: 1px 0 1px -25vw;
+  margin: 1px 0 1px -76%;
 }
 #landing #services div {
   display: -webkit-flex;
@@ -921,10 +930,11 @@ footer div p a:visited {
   content: ' ';
   position: absolute;
   left: 50%;
-  width: 80vw;
+  width: 80%;
+  max-width: 1260px;
   height: 1px;
   background: black;
-  margin: 1px 0 1px -40vw;
+  margin: 1px 0 1px -40%;
 }
 #landing #stockists > div h4 {
   text-align: center;

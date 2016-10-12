@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   // Mobile navigation
   var showingMobileNav = false;
-  $('header .trigger').on('click', function() {
+  $('#trigger').on('click', function() {
     if (showingMobileNav) {
       $('header .menu').removeClass('dropdown');
       showingMobileNav = false;
@@ -14,13 +14,23 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: 0
       }, 200);
+      return showingMobileNav;
     }
   });
 
-  // Close mobile nav on click of background
-  $('#hero').on('click', function() {
+  console.log(showingMobileNav);
+  if (showingMobileNav) {
+    $('header>div>a').replaceWith('<a><img src="/assets/img/logo/missluxe-logo.svg" alt="" /></a>')
+  }
+
+  $('main').on('click', function() {
     $('header .menu').removeClass('dropdown');
-    // 2 = false;
+    showingMobileNav = false;
   });
 
-});
+  $('header nav').siblings().on('click', function() {
+    $('header .menu').removeClass('dropdown');
+    showingMobileNav = false;
+  });
+
+});;

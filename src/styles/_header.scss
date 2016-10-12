@@ -4,6 +4,9 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    a {
+      z-index: 10;
+    }
     img {
       width: 300px;
       height: auto;
@@ -39,7 +42,7 @@ header {
         padding: 0;
         margin: 10px 0;
         li {
-          padding: 10px;
+          padding: 7px;
           list-style: none;
           text-transform: uppercase;
           @media (max-width: 500px) {
@@ -71,15 +74,17 @@ header {
         width: 60px;
         position: relative;
         ul {
-          display: none;
           position: absolute;
-          top: 34px;
           flex-direction: column;
           text-align: center;
-          padding: 0;
           background: white;
-          z-index: 3;
           width: 100vw;
+          top: 100%;
+          margin: 0;
+          height: 0;
+          justify-content: flex-start;
+          overflow: hidden;
+          height: 0;
           li {
             display: flex;
             justify-content: center;
@@ -91,6 +96,7 @@ header {
         }
         div {
           display: flex;
+          cursor: pointer;
           img:nth-last-child(1) {
             display: none;
           }
@@ -110,7 +116,12 @@ header {
 }
 .dropdown {
   ul {
-    transition: all 4s ease;
-    display: flex;
+    transition: all 400ms ease;
+    top: 48px;
+    height: 285px;
+    @media (max-width: 500px) {
+      top: 46px;
+      height: 210px;
+    }
   }
 }

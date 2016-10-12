@@ -115,6 +115,10 @@ section > div {
   padding: 0 20px;
 }
 
+a {
+  cursor: pointer;
+}
+
 .button {
   font-family: 'Playfair Display', serif;
   font-weight: normal;
@@ -130,10 +134,12 @@ section > div {
   font-size: 20px;
   font-style: italic;
   width: 160px;
+  cursor: pointer;
 }
 .button:hover {
   background: #E3A4A1;
   color: white;
+  transition: all 400ms ease;
 }
 @media (max-width: 900px) {
   .button {
@@ -171,9 +177,11 @@ section > div {
   font-size: 20px;
   font-style: italic;
   width: 160px;
+  cursor: auto;
 }
 .button2:hover {
-  opacity: 0.9;
+  transition: all 400ms ease;
+  color: white;
 }
 @media (max-width: 900px) {
   .button2 {
@@ -269,6 +277,11 @@ section > div {
   height: 50vw;
   max-height: 500px;
 }
+@media (max-width: 500px) {
+  .banner {
+    height: auto;
+  }
+}
 .banner > div {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -292,6 +305,11 @@ section > div {
       -ms-flex-align: center;
           align-items: center;
   margin: auto 0 auto 42%;
+}
+@media (max-width: 500px) {
+  .banner > div div {
+    margin: auto 0;
+  }
 }
 .banner > div div h2 {
   position: relative;
@@ -395,16 +413,16 @@ section > div {
   position: relative;
   margin: 1vw;
   background: #E3A4A1;
-  width: 25vw;
-  height: 25vw;
-  max-width: 300px;
-  max-height: 300px;
+  width: 23vw;
+  height: 23vw;
+  max-width: 250px;
+  max-height: 250px;
 }
 #gallery > div div div img {
-  width: 25vw;
-  height: 25vw;
-  max-width: 300px;
-  max-height: 300px;
+  width: 23vw;
+  height: 23vw;
+  max-width: 250px;
+  max-height: 250px;
 }
 #gallery > div div div img:nth-last-child(1) {
   position: absolute;
@@ -518,6 +536,9 @@ header div {
           align-items: center;
   width: 100%;
 }
+header div a {
+  z-index: 10;
+}
 header div img {
   width: 300px;
   height: auto;
@@ -577,7 +598,7 @@ header div nav ul {
   margin: 10px 0;
 }
 header div nav ul li {
-  padding: 10px;
+  padding: 7px;
   list-style: none;
   text-transform: uppercase;
 }
@@ -614,17 +635,21 @@ header div nav ul li a:hover {
     position: relative;
   }
   header div nav ul {
-    display: none;
     position: absolute;
-    top: 34px;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding: 0;
     background: white;
-    z-index: 3;
     width: 100vw;
+    top: 100%;
+    margin: 0;
+    height: 0;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow: hidden;
+    height: 0;
   }
   header div nav ul li {
     display: -webkit-flex;
@@ -642,6 +667,7 @@ header div nav ul li a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    cursor: pointer;
   }
   header div nav div img:nth-last-child(1) {
     display: none;
@@ -655,10 +681,15 @@ header div nav ul li a:hover {
 }
 
 .dropdown ul {
-  transition: all 4s ease;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  transition: all 400ms ease;
+  top: 48px;
+  height: 285px;
+}
+@media (max-width: 500px) {
+  .dropdown ul {
+    top: 46px;
+    height: 210px;
+  }
 }
 
 footer {
@@ -731,9 +762,9 @@ footer div p a:visited {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -742,8 +773,8 @@ footer div p a:visited {
 #landing #intro div div div,
 #landing #intro div div img {
   background: #E3A4A1;
-  width: 45vw;
-  height: 27vw;
+  width: 43vw;
+  height: 26vw;
   max-width: 465px;
   max-height: 300px;
   -webkit-align-items: center;
@@ -834,11 +865,11 @@ footer div p a:visited {
   position: absolute;
   left: 50%;
   top: 80px;
-  width: 152%;
+  width: 90vw;
   max-width: 1260px;
   height: 1px;
   background: black;
-  margin: 1px 0 1px -76%;
+  margin: 1px 0 1px -45vw;
 }
 #landing #services div {
   display: -webkit-flex;
@@ -850,15 +881,19 @@ footer div p a:visited {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 30px 0;
 }
 #landing #services div > div {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start;
 }
 #landing #services div > div > div {
   -webkit-flex-direction: column;
@@ -880,9 +915,18 @@ footer div p a:visited {
           justify-content: space-between;
   width: 100%;
 }
-#landing #services div > div > div h4 span,
-#landing #services div > div > div h5 span {
-  display: inline-block;
+#landing #services div > div > div span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: none;
+  margin-left: auto;
+}
+#landing #services div > div > div span p {
+  padding: 3px 5px 0 0;
 }
 #landing #services div > div > div > p {
   margin: 5px 0 18px;
@@ -898,6 +942,11 @@ footer div p a:visited {
   padding: 0;
   margin-top: 10px;
   border-top: 1px black solid;
+}
+@media (max-width: 900px) {
+  #landing #services div > div > div div {
+    border-top: none;
+  }
 }
 @media (max-width: 900px) {
   #landing #services div div {
@@ -930,11 +979,11 @@ footer div p a:visited {
   content: ' ';
   position: absolute;
   left: 50%;
-  width: 80%;
+  width: 90vw;
   max-width: 1260px;
   height: 1px;
   background: black;
-  margin: 1px 0 1px -40%;
+  margin: 1px 0 1px -45vw;
 }
 #landing #stockists > div h4 {
   text-align: center;
@@ -1075,6 +1124,12 @@ footer div p a:visited {
 #landing .map iframe {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 700px) {
+  #landing .map {
+    width: 85vw;
+    height: 85vw;
+  }
 }
 
 #our-team #hero {

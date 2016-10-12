@@ -230,6 +230,9 @@ a {
         font-size: 4vw;
         background: $fairlie-pink;
         margin: auto;
+        @media (min-width: 1080px) {
+          font-size: 45px;
+        }
         &:after,
         &:before {
           content: ' ';

@@ -1303,16 +1303,10 @@ footer div p a:visited {
   background: url("/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.jpg");
   background-size: cover;
 }
-#our-team .banner div div {
-  margin: 20px 0;
-}
 
 #gallery .banner {
   background: url("/assets/img/gallery/gallery-banner-ready-to-feel-beautiful@2x.jpg");
   background-size: cover;
-}
-#gallery .banner div div {
-  margin: 20px 0;
 }
 
 /* Outdate Browsers*/

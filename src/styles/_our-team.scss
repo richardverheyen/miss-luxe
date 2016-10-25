@@ -1,7 +1,6 @@
 #our-team {
   #hero {
     background: url('/assets/img/our-team/team-banner@2x.jpg');
-    // @include retina("/assets/img/our-team/team-banner@2x.jpg",55%);
     background-size: cover;
     height: 58vw;
 
@@ -120,13 +119,6 @@
 
   .banner {
     background: url('/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.jpg');
-    // @include retina("/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.jpg",55%);
     background-size: cover;
-
-    div {
-      div {
-        margin: 20px 0;
-      }
-    }
   }
 }

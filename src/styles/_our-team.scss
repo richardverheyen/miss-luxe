@@ -1,8 +1,10 @@
 #our-team {
   #hero {
-    background: url('/assets/img/our-team/team-banner.jpg');
-    @include retina("/assets/img/our-team/team-banner@2x.jpg",55%);
+    background: url('/assets/img/our-team/team-banner@2x.jpg');
+    // @include retina("/assets/img/our-team/team-banner@2x.jpg",55%);
+    background-size: cover;
     height: 58vw;
+
     h1 {
       &:after,
       &:before {
@@ -10,17 +12,21 @@
         height: 1px;
         margin-left: -52%;
       }
+
       &:after {
         top: 109%;
       }
     }
   }
+
   #profiles {
     display: flex;
+
     div {
       display: flex;
       flex-direction: column;
       margin: 2vw 0;
+
       > div {
         flex-direction: row;
         margin: 3vw 0;
@@ -29,24 +35,29 @@
         @media (max-width: 700px) {
           flex-direction: column;
           min-width: 280px;
+
           &:nth-last-child(1) {
             flex-direction: column-reverse;
+
             div {
               flex-direction: column;
             }
           }
         }
+
         > div {
           flex-direction: column;
           max-width: 36%;
           padding: 0 2vw;
           margin: 0;
+
           h2 {
             position: relative;
             text-align: center;
             padding: 24px 0;
             margin: 0 auto;
             font-size: 5vw;
+
             &:after,
             &:before {
               content: ' ';
@@ -58,9 +69,11 @@
               background: black;
               margin: 1px 0 1px -100px;
             }
+
             &:after {
               top: 100%;
             }
+
             span {
               display: block;
               font-size: 4vw;
@@ -70,11 +83,20 @@
             }
             @media(max-width: 500px) {
               font-size: 30px;
+
               span {
                 font-size: 20px;
               }
             }
+            @media (min-width: 1080px) {
+              font-size: 58px;
+
+              span {
+                font-size: 50px;
+              }
+            }
           }
+
           h5 {
             text-transform: none;
             margin: 15px auto;
@@ -86,6 +108,7 @@
           }
         }
       }
+
       img {
         width: 45%;
         max-width: 400px;
@@ -94,8 +117,16 @@
       }
     }
   }
+
   .banner {
-    background: url('/assets/img/our-team/team-banner-ready-to-feel-beautiful.jpg');
-    @include retina("/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.jpg",55%);
+    background: url('/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.jpg');
+    // @include retina("/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.jpg",55%);
+    background-size: cover;
+
+    div {
+      div {
+        margin: 20px 0;
+      }
+    }
   }
 }

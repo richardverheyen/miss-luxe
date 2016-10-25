@@ -760,6 +760,7 @@ footer div p a:visited {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  margin: 80px 20px;
 }
 #landing #intro div div {
   display: -webkit-flex;
@@ -775,42 +776,6 @@ footer div p a:visited {
       -ms-flex-align: stretch;
           align-items: stretch;
   width: 100%;
-}
-#landing #intro div div div,
-#landing #intro div div img {
-  background: #E3A4A1;
-  width: 43vw;
-  height: 26vw;
-  max-width: 465px;
-  max-height: 300px;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-  margin: 3vw 1vw;
-}
-#landing #intro div div div h2,
-#landing #intro div div img h2 {
-  text-align: center;
-  font-size: 7vw;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  padding: 6% 5%;
-}
-#landing #intro div div div h2 span,
-#landing #intro div div img h2 span {
-  display: block;
-  font-size: 6vw;
-}
-@media (min-width: 900px) {
-  #landing #intro div div div h2,
-  #landing #intro div div img h2 {
-    font-size: 65px;
-  }
-  #landing #intro div div div h2 span,
-  #landing #intro div div img h2 span {
-    font-size: 60px;
-  }
 }
 @media (max-width: 500px) {
   #landing #intro div div {
@@ -835,10 +800,11 @@ footer div p a:visited {
 #landing #intro div h3 {
   text-align: center;
   max-width: 750px;
-  margin: 0 20px 40px;
+  margin: 40px 20px;
 }
 #landing #intro div h3 span {
   display: block;
+  padding-top: 12px;
 }
 @media (max-width: 800px) {
   #landing #intro div h3 {
@@ -933,6 +899,7 @@ footer div p a:visited {
 }
 #landing #services div > div > div span p {
   padding: 3px 5px 0 0;
+  margin: 0;
 }
 #landing #services div > div > div > p {
   margin: 5px 0 18px;

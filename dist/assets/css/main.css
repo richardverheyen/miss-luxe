@@ -95,11 +95,12 @@ p span {
 /* Common to many pages */
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-footer,
-header,
-section {
+body footer,
+body header,
+body section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -107,11 +108,14 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 footer > div,
 header > div,
 section > div {
-  max-width: 1080px;
   min-width: 320px;
+  max-width: 1080px;
+  margin: 0 auto;
+  box-sizing: border-box;
   padding: 0 20px;
 }
 
@@ -208,11 +212,13 @@ a {
 .social-media-button a:nth-last-child(1) {
   display: none;
 }
-.social-media-button:hover a:nth-last-child(1) {
-  display: block;
-}
-.social-media-button:hover a:nth-last-child(2) {
-  display: none;
+@media (min-width: 900px) {
+  .social-media-button:hover a:nth-last-child(1) {
+    display: block;
+  }
+  .social-media-button:hover a:nth-last-child(2) {
+    display: none;
+  }
 }
 
 #hero {
@@ -268,6 +274,11 @@ a {
 @media (min-width: 1000px) {
   #hero div h1 {
     font-size: 80px;
+  }
+}
+@media (max-width: 400px) {
+  #hero div h1 {
+    font-size: 30px;
   }
 }
 
@@ -344,6 +355,11 @@ a {
   }
 }
 @media (max-width: 400px) {
+  .banner > div div h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
   .banner > div {
     margin: 10vw auto;
   }
@@ -612,7 +628,7 @@ header div nav ul li {
 }
 @media (max-width: 500px) {
   header div nav ul li {
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px 10px;
   }
 }
@@ -628,8 +644,10 @@ header div nav ul li a:visited {
   text-decoration: none;
   color: black;
 }
-header div nav ul li a:hover {
-  color: #AAAAAA;
+@media (min-width: 900px) {
+  header div nav ul li a:focus, header div nav ul li a:hover {
+    color: #AAAAAA;
+  }
 }
 @media (max-width: 900px) {
   header div nav {
@@ -671,27 +689,28 @@ header div nav ul li a:hover {
   header div nav ul li a {
     width: 100%;
   }
-  header div nav div {
+  header div nav #trigger {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     cursor: pointer;
   }
-  header div nav div img:nth-last-child(1) {
-    display: none;
-  }
-  header div nav div:focus img:nth-last-child(1), header div nav div:hover img:nth-last-child(1) {
-    display: block;
-  }
-  header div nav div:focus img:nth-last-child(2), header div nav div:hover img:nth-last-child(2) {
+  header div nav #trigger img:nth-last-child(1) {
     display: none;
   }
 }
 
+.dropdown #trigger img:nth-last-child(1) {
+  display: block;
+}
+.dropdown #trigger img:nth-last-child(2) {
+  display: none;
+}
 .dropdown ul {
-  transition: all 400ms ease;
   top: 48px;
   height: 285px;
+  right: 50%;
+  margin-right: -50vw;
 }
 @media (max-width: 500px) {
   .dropdown ul {
@@ -756,7 +775,12 @@ footer div p a:visited {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin: 40px 20px;
+  margin: 40px 0;
+}
+@media (max-width: 500px) {
+  #landing #intro div {
+    margin-top: 20px;
+  }
 }
 #landing #intro div div {
   display: -webkit-flex;
@@ -797,7 +821,7 @@ footer div p a:visited {
   font-family: 'Old Standard TT', serif;
   text-align: center;
   max-width: 900px;
-  margin: 40px 20px 10px;
+  margin: 40px 0 10px;
   font-size: 36px;
   letter-spacing: -1px;
 }
@@ -1005,6 +1029,9 @@ footer div p a:visited {
   }
 }
 @media (max-width: 900px) {
+  #landing #services div {
+    margin-top: 30px;
+  }
   #landing #services div div {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -1015,7 +1042,7 @@ footer div p a:visited {
             align-items: center;
   }
   #landing #services div div div {
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     margin: 0;
   }

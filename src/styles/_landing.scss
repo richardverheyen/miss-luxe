@@ -11,7 +11,10 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin: 40px 20px;
+      margin: 40px 0;
+      @media (max-width: 500px) {
+        margin-top: 20px;
+      }
 
       div {
         display: flex;
@@ -40,7 +43,7 @@
         font-family: 'Old Standard TT', serif;
         text-align: center;
         max-width: 900px;
-        margin: 40px 20px 10px;
+        margin: 40px 0 10px;
         font-size: 36px;
         letter-spacing: -1px;
 
@@ -219,12 +222,14 @@
         }
       }
       @media (max-width: 900px) {
+        margin-top: 30px;
+
         div {
           flex-direction: column;
           align-items: center;
 
           div {
-            width: 80%;
+            width: 100%;
             max-width: 500px;
             margin: 0;
           }

@@ -777,7 +777,7 @@ footer div p a:visited {
   width: 100%;
   margin: 40px 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #landing #intro div {
     margin-top: 20px;
   }
@@ -789,54 +789,54 @@ footer div p a:visited {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  width: 100%;
 }
-@media (max-width: 500px) {
-  #landing #intro div div {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-                -ms-grid-row-align: center;
-            align-items: center;
-    margin: 10px 0;
-  }
-  #landing #intro div div div {
-    display: none;
-  }
-  #landing #intro div div > img {
-    margin: 20px 10px;
-    width: 66vw;
-    height: 39vw;
-  }
-}
-#landing #intro div h3 {
+#landing #intro div div h3 {
   font-family: 'Old Standard TT', serif;
-  text-align: center;
+  text-align: left;
   max-width: 900px;
   margin: 40px 0 10px;
   font-size: 36px;
   letter-spacing: -1px;
 }
-#landing #intro div h3 span {
+#landing #intro div div h3 span {
   font-size: 28px;
   display: block;
   padding-top: 12px;
 }
-@media (max-width: 800px) {
-  #landing #intro div h3 {
+@media (max-width: 900px) {
+  #landing #intro div div h3 {
     max-width: 525px;
-    font-size: 24px;
+    font-size: 4vw;
   }
-  #landing #intro div h3 span {
+  #landing #intro div div h3 span {
     font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  #landing #intro div div h3 {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+#landing #intro div div img {
+  width: 32vw;
+  height: 32vw;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 40px 40px 10px 20px;
+}
+@media (max-width: 600px) {
+  #landing #intro div div img {
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+  }
+}
+@media (max-width: 600px) {
+  #landing #intro div div {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 #landing #instagram-gallery div {

@@ -1,4 +1,4 @@
-# FinSecPTX website
+# Miss Luxe Website
 
 #### What
 The [website](http://missluxe.com.au/) of an Eyelash and Brow studio owned by Fairlie Exintaris in Brisbane, Australia.

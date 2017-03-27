@@ -136,6 +136,7 @@ module.exports = function(grunt) {
         files: {
           'dist/assets/js/main.js': [
             'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/instafeed.js/instafeed.min.js',
             'src/js/main.js'
           ]
         },
@@ -144,6 +145,7 @@ module.exports = function(grunt) {
         files: {
           'dist/assets/js/main.min.js': [
             'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/instafeed.js/instafeed.min.js',
             'temp/js/main.min.js'
           ]
         },

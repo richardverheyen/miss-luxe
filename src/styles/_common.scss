@@ -19,6 +19,7 @@ section > div {
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 20px;
+  width: 100%;
 }
 
 a {
@@ -39,7 +40,7 @@ a {
   color: $fairlie-pink;
   font-size: 20px;
   font-style: italic;
-  width: 190px;
+  width: 110px;
   cursor: pointer;
 
   &:hover {
@@ -78,7 +79,8 @@ a {
   font-size: 20px;
   font-style: italic;
   width: 160px;
-  cursor: auto;
+  cursor: pointer;
+  user-select: none;
 
   &:hover {
     // opacity: 0.9;

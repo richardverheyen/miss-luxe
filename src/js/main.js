@@ -6,11 +6,11 @@ $(document).ready(function() {
   var showingMobileNav = false;
   $('.menu #trigger').on('click', function() {
     if (showingMobileNav) {
-      $('header .menu').removeClass('dropdown');
+      $('header').removeClass('dropdown');
       $('header>div>a').attr('href', '/');
       showingMobileNav = false;
     } else {
-      $('header .menu').addClass('dropdown');
+      $('header').addClass('dropdown');
       $('header>div>a').attr('href', '');
       showingMobileNav = true;
       $('html, body').animate({
@@ -21,14 +21,14 @@ $(document).ready(function() {
   });
 
   $('main').on('click', function() {
-    $('header .menu').removeClass('dropdown');
+    $('header').removeClass('dropdown');
     $('header>div>a').attr('href', '/');
     showingMobileNav = false;
   });
 
   $(window).on('resize', function() {
     if ($('main').width() >= 901) {
-      $('header .menu').removeClass('dropdown');
+      $('header').removeClass('dropdown');
       $('header>div>a').attr('href', '/');
       showingMobileNav = false;
     }

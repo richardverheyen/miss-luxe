@@ -6,12 +6,15 @@
   }
 
   #intro {
-    div {
+    margin-top: 80px;
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
+    > div {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin: 40px 0;
       @media (max-width: 600px) {
         margin-top: 20px;
       }
@@ -23,7 +26,7 @@
           font-family: 'Old Standard TT', serif;
           text-align: left;
           max-width: 900px;
-          margin: 40px 0 10px;
+          margin: 0 0 10px;
           font-size: 36px;
           letter-spacing: -1px;
 
@@ -43,6 +46,7 @@
           @media (max-width: 600px) {
             text-align: center;
             font-size: 22px;
+            margin-top: 40px;
           }
         }
         img {
@@ -50,11 +54,11 @@
           height: 32vw;
           max-width: 300px;
           max-height: 300px;
-          margin: 40px 40px 10px 20px;
+          margin: 0 40px 10px 0;
           @media (max-width: 600px) {
             width: 280px;
             height: 280px;
-            margin: 10px;
+            margin: auto;
           }
         }
         @media (max-width: 600px) {
@@ -64,12 +68,93 @@
     }
   }
 
+  #foundation-bar {
+    margin-top: 80px;
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+      .left {
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+          margin: 0;
+          white-space: nowrap;
+          font-size: 58px;
+          @media (max-width:900px) {
+            font-size: 6.2vw;
+          }
+          @media (max-width: 510px) {
+            font-size: 32px;
+          }
+          span {
+            display: block;
+            font-size: 36px;
+            @media(max-width: 900px) {
+              font-size: 4vw;
+            }
+            @media (max-width: 600px) {
+              font-size: 22px;
+            }
+          }
+        }
+        h3 {
+          font-family: 'Old Standard TT', serif;
+          font-size: 36px;
+          margin: 10px 0 0 0;
+          @media(max-width: 900px) {
+            font-size: 4vw;
+          }
+          @media (max-width: 600px) {
+            font-size: 22px;
+          }
+        }
+        p {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 13px;
+          color: black;
+          max-width: 330px;
+          line-height: 150%;
+          margin-left: 0;
+        }
+        a.button {
+          @media (min-width: 601px) {
+            margin-left: 0;
+          }
+
+        }
+      }
+      > img {
+        width: 32vw;
+        height: 32vw;
+        max-width: 300px;
+        max-height: 300px;
+        margin: 40px 40px 10px 20px;
+        @media (max-width: 600px) {
+          width: 200px;
+          height: 200px;
+          margin: 30px 10px 10px;
+        }
+      }
+    }
+  }
+
   #instagram-gallery {
+    margin-top: 80px;
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
+
     div {
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin: 40px 0;
 
       h2 {
         position: relative;
@@ -89,6 +174,9 @@
           background: black;
           margin: 1px 0 1px -150px;
         }
+      }
+      .button {
+        width: 190px;
       }
 
       > div {
@@ -139,6 +227,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 80px;
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
+
 
     h2 {
       position: relative;
@@ -165,7 +258,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 60px;
 
       > div {
         flex-direction: row;
@@ -252,7 +344,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 40px;
 
         img {
           padding: 26px 20px;
@@ -269,23 +360,42 @@
   .banner {
     background: url('/assets/img/landing/home-banner-ready-to-feel-beautiful@2x.JPG');
     background-size: cover;
+    margin-top: 80px;
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
   }
 
   #contact {
     display: flex;
+    margin-top: 80px;
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
 
     > div {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       width: 100%;
+
+      @media (max-width: 700px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 30px 0 0;
+      }
 
       > div {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        width: 50%;
-        margin: 100px 20px 50px;
+        width: calc(50% - 10px);
+        margin-bottom: 50px;
+        @media (max-width: 700px) {
+          width: 100%;
+          margin: 0;
+        }
 
         h2 {
           border-bottom: black solid 1px;
@@ -321,38 +431,29 @@
           }
         }
       }
-      @media (max-width: 700px) {
-        flex-direction: column-reverse;
-        align-items: center;
-        margin: 30px 0;
+      > div.map {
+        position: relative;
+        @media (max-width: 700px) {
+          width: 60vw;
+          height: 60vw;
+          margin-bottom: 0;
+          min-width: 300px;
+          min-height: 300px;
+        }
+        a {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
 
-        > div {
-          width: 80%;
-          margin: 0;
+        iframe {
+          width: 100%;
+          height: 100%;
         }
       }
-    }
-  }
-
-  .map {
-    position: relative;
-
-    a {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-    }
-    @media (max-width: 700px) {
-      width: 85vw;
-      height: 85vw;
     }
   }
 }

@@ -18,7 +18,7 @@ section > div {
   max-width: 1080px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 40px;
   width: 100%;
 }
 
@@ -128,6 +128,12 @@ a {
   @media (max-width: 900px) {
     height: 58vw;
     min-height: 250px;
+  }
+  @media (max-width: 600px) {
+    height: calc(100vh - 150px);
+  }
+  @media (max-width: 500px) {
+    height: calc(100vh - 115px);
   }
 
   div {

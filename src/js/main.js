@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   // Mobile navigation
   var showingMobileNav = false;
-  $('.menu #trigger').on('click', function() {
+  $('#trigger').on('click', function() {
     if (showingMobileNav) {
       $('header').removeClass('dropdown');
       $('header>div>a').attr('href', '/');

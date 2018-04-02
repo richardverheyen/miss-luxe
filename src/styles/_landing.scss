@@ -22,6 +22,9 @@
       div {
         display: flex;
         flex-direction: row;
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
         h3 {
           font-family: 'Old Standard TT', serif;
           text-align: left;
@@ -30,39 +33,37 @@
           font-size: 36px;
           letter-spacing: -1px;
 
-          span {
-            font-size: 28px;
-            display: block;
-            padding-top: 12px;
-          }
           @media(max-width: 900px) {
             max-width: 525px;
             font-size: 4vw;
-            span {
-              display: block;
-              font-size: 20px;
-            }
           }
           @media (max-width: 600px) {
             text-align: center;
             font-size: 22px;
             margin-top: 40px;
           }
+
+          span {
+            font-size: 28px;
+            display: block;
+            padding-top: 12px;
+            @media (max-width: 900px) {
+              display: block;
+              font-size: 20px;
+            }
+          }
+
         }
         img {
           width: 32vw;
           height: 32vw;
           max-width: 300px;
           max-height: 300px;
-          margin: 0 40px 10px 0;
+          margin: 40px 10px 0;
           @media (max-width: 600px) {
             width: 280px;
             height: 280px;
-            margin: auto;
           }
-        }
-        @media (max-width: 600px) {
-          flex-direction: column;
         }
       }
     }

@@ -19,6 +19,7 @@ header {
 
     a.logo-image {
       z-index: 3;
+      user-select: none;
       margin: auto;
       img {
         width: 300px;
@@ -37,6 +38,7 @@ header {
     }
 
     div#trigger {
+      user-select: none;
       display: none;
       cursor: pointer;
       margin: auto;
@@ -91,6 +93,7 @@ header {
 
         a {
           width: 100%;
+          user-select: none;
         }
       }
     }

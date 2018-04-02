@@ -156,6 +156,9 @@
         height: 40vw;
         max-width: 400px;
         margin: 40px 10px 0;
+        @media (min-width: 1000px) {
+          height: auto;
+        }
         @media (max-width: 600px) {
           width: auto;
           height: 200px;
@@ -165,11 +168,58 @@
   }
 
   .banner {
-    background: url('/assets/img/our-team/team-banner-ready-to-feel-beautiful@2x.JPG');
+    background: url('/assets/img/foundation-bar/foundation-banner-1800px.JPG');
     background-size: cover;
+    background-position: center;
     margin-top: 80px;
+    max-height: 380px;
     @media (max-width: 600px) {
       margin-top: 40px;
+    }
+    div {
+      text-align: center;
+      color: white;
+
+      > h2 {
+        padding: 0;
+        margin: 0 0 10px;
+        font-size: 50px;
+        @media (max-width: 900px) {
+          font-size: 5.5vw;
+        }
+        @media (max-width: 550px) {
+          font-size: 30px;
+        }
+        &:before, &:after {
+          display: none;
+        }
+      }
+      > h3 {
+        position: relative;
+        padding-top: 10px;
+        margin: 0 0 10px;
+        font-size: 32px;
+        @media (max-width: 900px) {
+          font-size: 3.5vw;
+        }
+        @media (max-width: 550px) {
+          font-size: 19px;
+        }
+        span {
+          display: block;
+          text-transform: uppercase;
+        }
+        &:before {
+          position: absolute;
+          content: ('');
+          width: 200px;
+          height: 1px;
+          background-color: white;
+          top: 0;
+          left: 50%;
+          transform: translatex(-50%);
+        }
+      }
     }
   }
 
@@ -209,7 +259,58 @@
       }
       > img {
         margin-top: 0;
+        max-height: 400px;
         @media (max-width: 700px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .banner-2 {
+    background: url('/assets/img/about/team-banner-ready-to-feel-beautiful@2x.JPG');
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+    height: 62vw;
+    max-height: 500px;
+    min-height: 350px;
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
+    div {
+      text-align: center;
+      color: white;
+
+      > h2 {
+        padding: 15px 0;
+        margin: 0 0 10px;
+        font-size: 50px;
+        @media (max-width: 900px) {
+          font-size: 5.5vw;
+        }
+        @media (max-width: 550px) {
+          font-size: 30px;
+        }
+        &:before, &:after {
+          display: block;
+        }
+      }
+      > h3 {
+        position: relative;
+        padding-top: 10px;
+        margin: 0 0 10px;
+        font-size: 32px;
+        @media (max-width: 900px) {
+          font-size: 3.5vw;
+        }
+        @media (max-width: 550px) {
+          font-size: 19px;
+        }
+        span {
+          display: block;
+          text-transform: uppercase;
+        }
+        &:before {
           display: none;
         }
       }

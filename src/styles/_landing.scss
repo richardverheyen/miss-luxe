@@ -367,15 +367,27 @@
         justify-content: center;
         align-items: center;
 
+        @media (max-width: 600px) {
+          flex-wrap: wrap;
+        }
+
         a {
           margin: 26px 20px;
           width: 25%;
           min-width: 100px;
           height: auto;
-          @media (max-width: 500px) {
+          @media (max-width: 660px) {
             margin: 10px 5px;
+            width: 50%;
+            max-width: 200px;
           }
-          @media (max-width: 350px) {
+
+          @media (max-width: 500px) {
+            max-width: 140px;
+          }
+
+          @media (max-width: 400px) {
+            max-width: 120px;
             margin: 10px 0px;
           }
           img {
